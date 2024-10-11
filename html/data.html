@@ -44,36 +44,24 @@
             }
 
             .query-form {
-                min-height: 95%;
+                min-height: 70%;
             }
 
             .query-row {
                 height: inherit;
             }
 
-            .query-container {
-                min-height: 100%;
-            }
-
             form {
-                padding: 4rem;
+                padding: 2rem;
             }
 
             .input-mod {
-                margin: 1.8rem 0;
+                margin: 1rem 0;
                 border-radius: 50px;
             }
 
-            #first-name {
-                margin-top: 0;
-            }
-
-            #questions {
-                min-height: 15vh;
-            }
-
             #submit-button, #reset-button {
-                margin-top: 4rem;
+                margin-top: 2rem;
                 width: 100%;
                 border-radius: 50px;
                 padding: 1rem;
@@ -86,8 +74,8 @@
             }
 
             .form-heading {
+                font-size: 1.8rem;
                 color: white;
-                font-size: 2.5rem;
                 font-family: Inter-bold;
                 min-width: 100%;
                 text-align: center;
@@ -165,79 +153,79 @@
         <![endif]-->
         <div class="container-fluid frame-container">
             <div class="row frame-row align-items-center">
-                <div class="col-xl-8 overflow-auto">
+                <div class="col-xl-8 col-lg-8 overflow-auto">
                     <div class="description-container">                    
                         <div class="row g-2 data-row align-items-stretch">
 
-                            <div class="col-xl-9 visible" id="form-container">
+                            <div class="col-xl-12 col-lg-12 visible" id="form-container">
                                 <div class="query-form content-tab">
                                     <div class="form-heading">SEARCH OUR ARCHIVE</div>
                                     <form novalidate action="" id="data-query-form">
                                         <div class="row">
-                                            <div class="col-xl-12">
+                                            <div class="col-xl-12 col-lg-12">
                                                 <div class="form-floating">
                                                     <input type="text" id="object-name" class="form-control input-mod" placeholder="Object name" required />
                                                     <label for="object-name">Object name</label>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-6 col-lg-6">
                                                 <div class="form-floating">
                                                     <input type="text" id="ra" class="form-control input-mod" placeholder="RA (radians)" required />
                                                     <label for="ra">RA (radians)</label>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-6 col-lg-6">
                                                 <div class="form-floating">
                                                     <input type="text" id="dec" class="form-control input-mod" placeholder="DEC (radians)" required />
                                                     <label for="dec">DEC (radians)</label>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-6 col-lg-6">
                                                 <div class="form-floating">
                                                     <input type="date" id="start-date" class="form-control input-mod" placeholder="Observation Start Date" />
                                                     <label for="start-date">Observation Start Date</label>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-6 col-lg-6">
                                                 <div class="form-floating">
                                                     <input type="date" id="end-date" class="form-control input-mod" placeholder="Observation End Date" />
                                                     <label for="end-date">Observation End Date</label>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-6 col-lg-6">
                                                 <div class="form-floating">
                                                     <input type="time" id="start-time" class="form-control input-mod" placeholder="Observation Start Time" />
                                                     <label for="start-time">Observation Start Time</label>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-6 col-lg-6">
                                                 <div class="form-floating">
                                                     <input type="time" id="end-time" class="form-control input-mod" placeholder="Observation End Time" />
                                                     <label for="end-time">Observation End Time</label>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-4">
+                                            <div class="col-xl-4 col-lg-6">
                                                 <div class="form-floating">
                                                     <input type="text" id="min-exposure" class="form-control input-mod" placeholder="Minimum exposure" />
                                                     <label for="min-exposure">Minimum exposure</label>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-4">
+                                            <div class="col-xl-4 col-lg-4">
                                                 <div class="form-floating">
                                                     <input type="text" id="search-radius" class="form-control input-mod" placeholder="Search radius (arcsec)" />
                                                     <label for="search-radius">Search radius (arcsec)</label>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-4">
+                                            <div class="col-xl-4 col-lg-4">
                                                 <div class="form-floating">
                                                     <input type="text" id="limit" class="form-control input-mod" placeholder="Limit results to" />
                                                     <label for="limit">Limit results to</label>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-6 col-lg-6">
                                                 <button id="submit-button" class="research-button" type="submit">Submit</button>
                                             </div>
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-6 col-lg-6">
                                                 <button id="reset-button" class="research-button" type="reset">Reset</button>
                                             </div>
                                         </div>

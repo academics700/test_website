@@ -33,6 +33,10 @@
     justify-content: space-between;
 }
 
+::-webkit-scrollbar { 
+    display: none !important;  /* Safari and Chrome */
+}
+
 .menu-small {
     position: fixed;
     margin: 1rem;
@@ -50,10 +54,11 @@
     padding: 0.75rem;
     border: 1px solid #cbcbcb3b;
     border-radius: 30px;
+    height: 90vh;
 }
 
 .menu-image {
-    height: 25vh;
+    height: 17.5vh;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -95,7 +100,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 55vh;
+    height: 67.5vh;
     overflow-y: auto;
 }
 
@@ -104,16 +109,12 @@
 }
 
 .tab {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin: 0.25rem 0;
-    padding: 1rem;
+    padding: 0.75rem;
     justify-content: flex-start;
     border-radius: 8px;
     background-image: linear-gradient(to right, var(--menu-left-gradient), var(--menu-right-gradient));
     box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 15px 2px;
-    line-height: 0.5rem;
     transition: --menu-left-gradient 300ms ease-in-out, transform 500ms ease-in-out;
 }
 
@@ -131,7 +132,7 @@
 }
 
 .tab-icon {
-    height: 2rem;
+    height: 2.5rem;
 }
 
 .tab-heading {
@@ -141,7 +142,7 @@
 
 .tab-text {
     font-family: Inter-regular;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-left: 0.85rem;
     line-height: 1rem;
 }
@@ -197,11 +198,11 @@
 }
 
 .child-container-home-active {
-    height: 92.5vh;
+    height: 90vh;
 }
 
 .child-container-home-inactive {
-    height: 77.5vh;
+    height: 75vh;
 }
 
 .iframe {
@@ -232,17 +233,18 @@
 .title-ado-1 {
     font-family: Krona-one;
     color: #CBCBCB;
+    font-size: 1.5rem;
 }
 
 .title-ado-2 {
     font-family: Inter-bold;
-    font-size: 5rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 2rem;
 }
 
 .content-tab {
     font-family: Inter-regular;
-    font-size: 1rem;
+    font-size: 0.9rem;
     background-color: rgba(255, 255, 255, 0.12);
     border-radius: 10px;
     padding: 2vh 1.5vw;
@@ -250,14 +252,14 @@
 }
 
 .about-heading {
-    font-size: 1.8rem;
-    font-family: Inter-semi-bold;
+    font-size: 1.4rem;
+    font-family: Inter-bold;
     padding-bottom: 0.5rem;
     color: #B5FFE9;
 }
 
 .iith-insignia {
-    width: 2.5vw;
+    height: 3.5rem;
 }
 
 .iith-wrapper {
@@ -301,7 +303,7 @@
     text-align: center;
     font-family: Inter-extra-thin;
     font-weight: lighter;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 4rem;
 }
 

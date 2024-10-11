@@ -18,18 +18,18 @@
 
         <style>
             .row-container {
-                margin: auto 10vw;
+                margin: auto 5vw;
             }
 
             .title-1 {
                 font-family: Krona-one;
-                font-size: 2.5rem;
+                font-size: 2rem;
                 color: #CBCBCB
             }
 
             .title-2 {
                 font-family: Inter-bold;
-                font-size: 6rem;
+                font-size: 4rem;
             }
 
             .home-description {
@@ -40,16 +40,16 @@
             }
 
             .home-button {
-                margin: 2vh 0;
+                margin: 1rem 0;
                 border-radius: 45px;
                 padding: 1rem;
                 background: linear-gradient(to right, #B640B9, #029797);
-                box-shadow: rgba(0, 0, 0, 0.75) 4px 4px 25px 4px;
+                box-shadow: rgba(0, 0, 0, 0.75) 4px 4px 10px 0px;
                 transition: transform 300ms ease-in-out;
             }
 
             .home-button:hover {
-                transform: scale(0.85);
+                transform: scale(0.95);
             }
 
             .home-button > a {
@@ -64,22 +64,20 @@
 
             .rocket-icon {
                 aspect-ratio: 1 / 1;
-                width: 1.5vw;
+                width: 1.5rem;
             }
 
             .handels {
-                display: flex;
-                flex-direction: row;
-                width: 10vw;
                 justify-content: space-between;
-                margin: 3vh 0;
+                margin: 1rem 0;
             }
 
             .social-icons {
                 aspect-ratio: 1 / 1;
-                width: 1.75vw;
+                width: 1.75rem;
                 filter: drop-shadow(2px 2px 20px rgba(0, 0, 0, 1));
                 transition: transform 300ms ease-in-out;
+                margin-right: 1rem;
             }
 
             .social-icons:hover {
@@ -97,9 +95,9 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="container-fluid">
-            <div class="row d-flex align-items-center justify-content-evenly vh-100 row-container">
-                <div class="col-xl-6">
-                    <div class="home-child-container d-flex flex-column justify-content-center align-items-start">
+            <div class="row vh-100 row-container">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="home-child-container d-flex flex-column h-100 justify-content-xl-center justify-content-lg-center">
                         <h2 class="title-1">
                             ADVANCED DARKSKY
                         </h2>
@@ -109,15 +107,15 @@
                         <span class="home-description">
                             A premium class observatory at<br>Indian Institute of Technology Hyderabad
                         </span>
-                        <span class="home-button">
-                            <a href="research.html" target="frame" class="home-button-link">
+                        <a href="research.html" target="frame" class="home-button-link">
+                                <button class="home-button">
                                 <span class="home-research-button">
                                     <img src="../icons/learn-more.svg" alt="Rocket icon" class="rocket-icon">
                                     Learn more ...
                                 </span>
-                            </a>
-                        </span>
-                        <div class="handels">
+                            </button>
+                        </a>
+                        <div class="handels d-flex flex-row justify-content-start">
                             <a href="#" class="social-links">
                                 <img src="../icons/github.svg" alt="Github icon" class="github social-icons">
                             </a>
@@ -133,8 +131,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6">
-                    <div class="home-image-container d-flex flex-column justify-content-center align-items-end">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="home-image-container d-flex flex-column h-100 align-items-xl-end align-items-lg-end justify-content-lg-center">
                         <img src="../images/ado.png" alt="ADO image" class="ado-image">
                     </div>
                 </div>
