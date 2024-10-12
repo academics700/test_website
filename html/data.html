@@ -45,6 +45,7 @@
 
             .query-form {
                 min-height: 70%;
+                max-height: 95vh;
             }
 
             .query-row {
@@ -52,11 +53,11 @@
             }
 
             form {
-                padding: 2rem;
+                padding: 4vw;
             }
 
             .input-mod {
-                margin: 1rem 0;
+                margin: 3vh 0;
                 border-radius: 50px;
             }
 
@@ -68,9 +69,11 @@
             }
 
             label, input{
+                width: 100%;
                 color: black !important;
                 font-family: Inter-regular !important;
                 padding-left: 2rem !important;
+                overflow-x: auto;
             }
 
             .form-heading {
@@ -153,12 +156,12 @@
         <![endif]-->
         <div class="container-fluid frame-container">
             <div class="row frame-row align-items-center">
-                <div class="col-xl-8 col-lg-8 overflow-auto">
+                <div class="col-xl-8 col-lg-8">
                     <div class="description-container">                    
                         <div class="row g-2 data-row align-items-stretch">
 
-                            <div class="col-xl-12 col-lg-12 visible" id="form-container">
-                                <div class="query-form content-tab">
+                            <div class="col-xxl-10 col-xl-12 col-lg-12 visible" id="form-container">
+                                <div class="query-form content-tab overflow-auto">
                                     <div class="form-heading">SEARCH OUR ARCHIVE</div>
                                     <form novalidate action="" id="data-query-form">
                                         <div class="row">
@@ -204,7 +207,7 @@
                                                     <label for="end-time">Observation End Time</label>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-4 col-lg-6">
+                                            <div class="col-xl-4 col-lg-4">
                                                 <div class="form-floating">
                                                     <input type="text" id="min-exposure" class="form-control input-mod" placeholder="Minimum exposure" />
                                                     <label for="min-exposure">Minimum exposure</label>
@@ -233,7 +236,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-12 hidden" id="table-container">
+                            <div class="col-xl-12 col-lg-12 hidden" id="table-container">
                                 <div class="query-results content-tab">
                                     <div class="form-heading">SEARCH RESULTS</div>
                                     <div class="table-container-child">
@@ -261,7 +264,7 @@
                     </div>
                 </div>
                 
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-lg-4">
                     <div class="page-description">
                         <div class="page d-flex flex-column align-items-center" id="network-image-container">
                             <img src="../images/data/data-image.jpeg" alt="Data image" class="content-image mix-blend-lighten" id="network-image">

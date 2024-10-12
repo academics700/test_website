@@ -1,11 +1,28 @@
 function changeCss(element, state) {
     element.classList.add(state);
 }
+/* 
+function scrollRefresh() {
+    const iFrame = document.getElementById('content-frame');
+    iFrame.onload = function() {
+        const iFrameDocument = iFrame.contentDocument || iFrame.contentWindow.document;
+        const rowContainer = iFrameDocument.getElementById('row-container');
+        rowContainer.addEventListener('scroll', function() {
+            console.log('test');
+            lightenImage(iFrame);
+        });
+    };
+} */
 
 function checkIframeLoadStatus() {
-    const i_frame = document.getElementById('content-frame')
+    const i_frame = document.getElementById('content-frame');
     i_frame.onload = () => {
         lightenImage(i_frame);
+        const iFrameDocument = i_frame.contentDocument || i_frame.contentWindow.document;
+        const rowContainer = iFrameDocument.getElementById('row-container');
+        rowContainer.addEventListener('scroll', function() {
+            lightenImage(i_frame);
+        })
     };
 }
 
@@ -35,8 +52,9 @@ function lightenImage(i_frame) {
 
     const img_width = img.offsetWidth;
     const img_height = img.offsetHeight;
-    const img_left = img.offsetLeft;
-    const img_top = img.offsetTop;
+    const rect = img.getBoundingClientRect();
+    const img_left = rect.left;
+    const img_top = rect.top;
 
     const background_image = new Image();
     background_image.src = parent_bg_image;
@@ -90,7 +108,7 @@ function resizeTabOnClick(tab_buttons, title_container, frame_container, menu_im
 
 function updateIframeSource(iframe_source) {
     var i_frame = document.getElementById('content-frame');
-    i_frame.src = "html/" + iframe_source + ".html";
+    i_frame.src = `html/${iframe_source}.html`;
 }
 
 function switchTabs() {
@@ -106,6 +124,11 @@ function switchTabs() {
             updateIframeSource(iframe_source[i]);
             resizeTabOnClick(tab_buttons, title_container, frame_container, menu_image, menu_images, i);
             checkIframeLoadStatus();
+            try {
+                document.getElementById('collapsible-menu-close').click();
+            }
+            catch {
+            }
         });
     }
 }
@@ -159,6 +182,56 @@ function displayResults(filteredData) {
     });
 }
 
+function openMenu() {
+    document.getElementById('collapsible-menu').addEventListener('click', function() {
+        this.style.display = 'none';
+        document.getElementById('collapsible-menu-close').style.display = 'block';
+        document.getElementById('menu-image').style.display = 'none';
+        document.getElementById('menu-tabs').style.height = '85vh';
+        document.getElementById('menu-wrapper').scrollTop = 0;
+        menuContainer = document.getElementById('menu-container');
+        menuContainer.style.visibility = 'visible';
+        menuContainer.style.width = '20rem';
+        menuContainer.style.position = 'absolute';
+        menuContainer.style.zIndex = '5';
+        menuContainer.style.top = '3rem';
+        menuContainer.classList.remove('hide-menu');
+        menuContainer.style.height = '90vh';
+        menuLink = document.getElementsByClassName('menu-link');
+        for (let i = 0; i < menuLink.length; i++) {
+            if (menuLink[i].classList.contains('menu-tab-animation-shrink')) {
+                menuLink[i].classList.remove('menu-tab-animation-shrink');
+            }
+            menuLink[i].classList.add('menu-tab-animation-grow');
+            menuLink[i].addEventListener('animationend', function() {
+                menuLink[i].classList.remove('scale-0');
+            }, { once: true });
+            menuLink[i].style.animationDelay = `${0.07*i}s`;
+        }
+    });
+}
+
+function closeMenu() {
+    document.getElementById('collapsible-menu-close').addEventListener('click', function() {
+        this.style.display = 'none';
+        document.getElementById('collapsible-menu').style.display = 'block';
+        menuContainer.style.height = '0';
+        menuContainer.addEventListener('transitionend', function() {
+            menuContainer.style.visibility = 'hidden';
+        }, { once: true });
+        menuLink = document.getElementsByClassName('menu-link');
+        for (let i = 0; i < menuLink.length; i++) {
+            menuLink[i].classList.remove('menu-tab-animation-grow');
+            menuLink[i].classList.add('menu-tab-animation-shrink');
+            menuLink[i].addEventListener('animationend', function() {
+                menuLink[i].classList.add('scale-0');
+            }, { once: true });
+            menuLink[i].style.animationDelay = `${0.035*(7-i)}s`;
+        }
+    });
+}
 
 //imageLighten();
 switchTabs();
+openMenu();
+closeMenu();

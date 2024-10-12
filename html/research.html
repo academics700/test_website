@@ -41,6 +41,12 @@
             .learn-more-icon {
                 width: 1.2rem;
             }
+
+            @media only screen and (max-width: 991px) {
+                .feature-description {
+                    font-size: 0.8rem;
+                }
+            }
         </style>
     </head>
     <body>
@@ -49,8 +55,8 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="container-fluid frame-container">
-            <div class="row frame-row align-items-center">
-                <div class="col-xl-8 col-lg-8 overflow-auto">
+            <div class="row frame-row align-items-center overflow-sm-auto" id="row-container">
+                <div class="col-xl-8 col-lg-8 overflow-md-auto order-md-1 order-2">
                     <div class="description-container">
                         <div class="container-fluid">
                             <div class="row g-2 research-scope-row">
@@ -124,7 +130,7 @@
                     </div>
                 </div>
                     
-                <div class="col-xl-4">
+                <div class="col-xl-4 order-md-2 order-1">
                     <div class="page-description">
                         <div class="page d-flex flex-column align-items-center" id="network-image-container">
                             <img src="../images/research/research-image.jpeg" alt="ADO image" class="content-image mix-blend-lighten" id="network-image">

@@ -88,6 +88,45 @@
                 aspect-ratio:  1 / 1;
                 width: 30vw;
             }
+
+            @media only screen and (max-width: 767px) {
+                .row-container {
+                    margin: auto 3rem;
+                }
+
+                .title-1 {
+                    font-size: 2.55rem;
+                }
+
+                .title-2 {
+                    font-size: 3.55rem;
+                }
+
+                .ado-image {
+                    width: 55vw;
+                    margin: 2rem auto;
+                }
+            }
+
+            @media only screen and (max-width: 575px) {
+                .row-container {
+                    margin: auto 0;
+                }
+
+                .title-1 {
+                    font-size: 1.2rem;
+                }
+
+                .title-2 {
+                    font-size: 2.2rem;
+                }
+
+                .ado-image {
+                    width: 70vw;
+                    margin: 2rem auto;
+                }
+            }
+
         </style>
     </head>
     <body class="content">
@@ -96,8 +135,8 @@
         <![endif]-->
         <div class="container-fluid">
             <div class="row vh-100 row-container">
-                <div class="col-xl-6 col-lg-6">
-                    <div class="home-child-container d-flex flex-column h-100 justify-content-xl-center justify-content-lg-center">
+                <div class="col-md-6 order-md-1 order-2">
+                    <div class="home-child-container d-flex flex-column h-100 justify-content-md-center">
                         <h2 class="title-1">
                             ADVANCED DARKSKY
                         </h2>
@@ -131,8 +170,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="home-image-container d-flex flex-column h-100 align-items-xl-end align-items-lg-end justify-content-lg-center">
+                <div class="col-md-6 order-md-2 order-1">
+                    <div class="home-image-container d-flex flex-column h-100 align-items-md-end justify-content-md-center align-items-center justify-content-center">
                         <img src="../images/ado.png" alt="ADO image" class="ado-image">
                     </div>
                 </div>
