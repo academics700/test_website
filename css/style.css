@@ -29,19 +29,23 @@
     box-sizing: border-box;
     font-family: Inter-thin;
     font-size: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     background-color: black;
+    position: fixed;
 }
 
 .parent-container {
+    position: absolute;
     background-color: black;
     background-image: url("../images/background.webp");
     background-size: 100svw 100svh;
     background-repeat: no-repeat;
     position: fixed;
-    overflow-y: auto;
+    overflow-y: auto !important;
     height: 100svh;
     width: 100svw;
 }
