@@ -47,7 +47,7 @@ body {
 }
 
 .parent-row {
-    height: 100svh;
+    height: 100dvh;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
@@ -77,12 +77,12 @@ body {
 
 @media only screen and (min-width: 1200px) {
     .menu-container {
-        height: 90svh;
+        height: 90dvh;
     }
 }
 
 .menu-image {
-    height: 17.5svh;
+    height: 17.5dvh;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -136,7 +136,7 @@ body {
 
 @media only screen and (min-width: 1200px) {
     .menu-tabs {
-        height: 67.5svh;
+        height: 67.5dvh;
     }
 }
 
@@ -250,11 +250,11 @@ body {
 }
 
 .child-container-home-active {
-    height: 90svh;
+    height: 90dvh;
 }
 
 .child-container-home-inactive {
-    height: 75svh;
+    height: 75dvh;
 }
 
 .iframe {
@@ -269,7 +269,7 @@ body {
 }
 
 .main-title {
-    height: 15svh;
+    height: 15dvh;
     width: 80vw;
 }
 
@@ -298,7 +298,7 @@ body {
     font-family: Inter-regular;
     font-size: 0.9rem;
     border-radius: 10px;
-    padding: 2svh 1.5vw;
+    padding: 2dvh 1.5vw;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px 0px;
 }
 
@@ -327,11 +327,11 @@ body {
 }
 
 .frame-container {
-    padding: 2.5svh;
+    padding: 2.5dvh;
 }
 
 .frame-row {
-    height: 95svh;
+    height: 95dvh;
 }
 
 .page-description {
@@ -388,7 +388,7 @@ body {
 }
 
 .description-container {
-    height: 95svh;
+    height: 95dvh;
 }
 
 .wrapper {
@@ -415,7 +415,7 @@ body {
     text-align: center;
     margin: auto;
     position: absolute;
-    top: 2svh;
+    top: 2dvh;
     left: 90vw;
     backdrop-filter: blur(20px);
 }
@@ -559,7 +559,7 @@ body {
         text-align: center;
         margin: auto;
         position: absolute;
-        top: 2svh;
+        top: 2dvh;
         left: 2vw;
         z-index: 3;
         backdrop-filter: blur(20px);
@@ -596,7 +596,7 @@ body {
     }
 
     .child-container-home-inactive {
-        height: 90svh;
+        height: 90dvh;
     }
 }
 
