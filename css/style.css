@@ -37,10 +37,13 @@ body {
     position: absolute;
 }
 
-.loader-background {
+.loader-background, .loader-container {
     height: 100dvh;
     width: 100vw;
     display: block;
+}
+
+.loader-background {
     background-image: radial-gradient(circle farthest-corner at center, #3C4B57 0%, #1C262B 100%);
 }
 
@@ -52,6 +55,7 @@ body {
     height: 64px;
     border-radius: 50%;
     perspective: 800px;
+    display: block;
 }
 
 .inner {
@@ -374,7 +378,12 @@ body {
 }
 
 .frame-row {
+    display: none;
     height: 95dvh;
+}
+
+.frame-container {
+    padding: 2.5dvh;
 }
 
 .page-description {
