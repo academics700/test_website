@@ -40,17 +40,14 @@ body {
 .parent-container {
     background-color: black;
     background-image: url("../images/background.webp");
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
-    overflow-y: auto !important;
-    height: 100%;
-    width: 100%;
     overflow: hidden;
 }
 
 .parent-row {
-    height: 100%;
+    height: 100vh;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
@@ -230,6 +227,10 @@ body {
     font-family: Inter-regular;
     font-style: italic;
     font-size: 1rem;
+}
+
+.content {
+    width: 100%;
 }
 
 .content-container {
@@ -451,9 +452,63 @@ body {
     transform: scale(0);
 }
 
+.animation-swipe-right {
+    animation-name: swipe-right;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+.animation-swipe-right-100 {
+    animation-name: swipe-right-100;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+.animation-grow {
+    animation-name: grow;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+.animation-expand-y {
+    animation-name: expand-y;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+.animation-swipe-bottom {
+    animation-name: swipe-bottom;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+.animation-swipe-top {
+    animation-name: swipe-top;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
 @media only screen and (min-width: 1200px) {
     .menu-tab-animation-xl-grow {
         animation-name: grow;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+    }
+
+    .menu-container {
+        animation-name: expand-y;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+    }
+
+    .content-container {
+        animation-name: expand-x;
         animation-duration: 0.5s;
         animation-timing-function: ease-out;
     }
@@ -471,6 +526,12 @@ body {
         visibility: hidden;
         height: 0;
         transition: height 0.5s ease-out;
+    }
+
+    .content-container {
+        animation-name: expand-y;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
     }
 
 
