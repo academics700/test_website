@@ -90,11 +90,68 @@ body {
 .parent-container {
     display: none;
     background-color: black;
-    background-image: url("../images/background.webp");
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
     overflow: hidden;
+}
+
+@media only screen and (min-width: 1200px) {
+    .parent-container {
+        background-image: url("../images/background.webp");
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 1199px) {
+    @media screen and (max-aspect-ratio: 3 / 4) {
+        .parent-container {
+            background-image: url("../images/background-9-16.webp");
+        }
+    }
+
+    @media screen and (min-aspect-ratio: 3 / 4) and (max-aspect-ratio: 4 / 3) {
+        .parent-container {
+            background-image: url("../images/background-3-4.webp");
+        }
+    }
+
+    @media screen and (min-aspect-ratio: 4 / 3) and (max-aspect-ratio: 16 / 9) {
+        .parent-container {
+            background-image: url("../images/background-4-3.webp");
+        }
+    }
+
+    @media screen and (min-aspect-ratio: 16 / 9) {
+        .parent-container {
+            background-image: url("../images/background.webp");
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    @media screen and (max-aspect-ratio: 9 / 18) {
+        .parent-container {
+            background-image: url("../images/background-9-18.webp");
+        }
+    }
+
+    @media screen and (min-aspect-ratio: 9 / 18) and (max-aspect-ratio: 9 / 16) {
+        .parent-container {
+            background-image: url("../images/background-9-16.webp");
+        }
+    }
+
+    @media screen and (min-aspect-ratio: 9 / 16) and (max-aspect-ratio: 16 / 9) {
+        .parent-container {
+            background-image: url("../images/background-9-16.webp");
+        }
+    }
+
+    @media screen and (min-aspect-ratio: 16 / 9) {
+        .parent-container {
+            background-image: url("../images/background.webp");
+        }
+    }
 }
 
 .parent-row {
@@ -293,6 +350,7 @@ body {
     border: 1px solid #cbcbcb3b;
     vertical-align: middle;
     overflow-y: auto;
+    transition: height 1s ease-in-out, width 1s ease-in-out;
 }
 
 .child-container {
@@ -321,17 +379,21 @@ body {
 }
 
 .main-title {
-    height: 15dvh;
     width: 80vw;
+    transition: height 1s ease-in-out, opacity 1s ease-in-out, visibility 1s ease-in-out;
+    padding-left: 2.5vw;
 }
 
 .main-title-inactive {
-    display: none !important;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .main-title-active {
-    display: flex;
-    padding-left: 2.5vw;
+    height: 15dvh;
+    opacity: 1;
+    visibility: visible;
 }
 
 .title-ado-1 {
@@ -468,14 +530,15 @@ body {
     text-align: center;
     margin: auto;
     position: absolute;
-    top: 2dvh;
-    left: 90vw;
+    top: 92dvh;
+    left: 96vw;
     backdrop-filter: blur(20px);
 }
 
 @media only screen and (max-width: 1199px) {
     .color-mode {
-        left: 4rem;
+        top: 2dvh;
+        left: 4.5rem;
     }
 }
 
@@ -505,6 +568,7 @@ body {
     transform: scale(0);
 }
 
+
 .animation-swipe-right {
     animation-name: swipe-right;
     animation-duration: 0.5s;
@@ -533,9 +597,23 @@ body {
     animation-fill-mode: backwards;
 }
 
+.animation-grow-1 {
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
 .animation-expand-y {
     animation-name: expand-y;
     animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+.animation-expand-y-1 {
+    animation-name: expand-y;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: backwards;
 }
