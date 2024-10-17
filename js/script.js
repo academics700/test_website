@@ -15,11 +15,10 @@ function resizeTabOnClick(tab_buttons, title_container, frame_container, menu_im
         title_container.classList.add('main-title-inactive');
         frame_container.classList.remove('child-container-home-inactive');
         frame_container.classList.add('child-container-home-active');
-
     }
     else {
-        title_container.classList.remove('main-title-inactive')
-        title_container.classList.add('main-title-active')
+        title_container.classList.remove('main-title-inactive');
+        title_container.classList.add('main-title-active');
         frame_container.classList.add('child-container-home-inactive');
         frame_container.classList.remove('child-container-home-active');
     }
@@ -40,6 +39,28 @@ function switchTabs() {
     const iframe_source = ["home", "about", "equipment", "collaborations", "research", "data", "people", "contact"];
 
     for (let i=0; i<tab_buttons.length; i++) {
+        const iFrame = document.getElementById('content-frame');
+        const iframeDocument = iFrame.contentDocument || iFrame.contentWindow.document;
+        iFrame.addEventListener('load', function() {
+            iframeDocument.getElementById('home-research-button').addEventListener('click', () => {
+                updateIframeSource(iframe_source[4]);
+                resizeTabOnClick(tab_buttons, title_container, frame_container, menu_image, menu_images, 4);
+                var iFrame = document.getElementById('content-frame');
+                iFrame.addEventListener('load', function() {
+                    if (colorState === 'dark') {
+                        darkMode();
+                    }
+                    else {
+                        lightMode();
+                    }
+                });
+                try {
+                    document.getElementById('collapsible-menu-close').click();
+                }
+                catch {
+                }
+            });
+        })
         tab_buttons[i].addEventListener('click', () => {
             updateIframeSource(iframe_source[i]);
             resizeTabOnClick(tab_buttons, title_container, frame_container, menu_image, menu_images, i);
