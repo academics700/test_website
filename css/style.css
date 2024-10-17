@@ -282,6 +282,7 @@ body {
 
 .content {
     width: 100%;
+    height: 100%;
 }
 
 .content-container {
@@ -511,6 +512,13 @@ body {
     animation-fill-mode: backwards;
 }
 
+.animation-swipe-fade-right {
+    animation-name: swipe-fade-right;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
 .animation-swipe-right-100 {
     animation-name: swipe-right-100;
     animation-duration: 0.5s;
@@ -534,6 +542,13 @@ body {
 
 .animation-swipe-bottom {
     animation-name: swipe-bottom;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+.animation-swipe-fade-bottom {
+    animation-name: swipe-fade-bottom;
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
     animation-fill-mode: backwards;
