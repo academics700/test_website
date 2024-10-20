@@ -812,6 +812,10 @@ body {
         max-width: 95vw;
     }
 
+    .research-page-image {
+        max-width: 70% !important;
+    }
+
     .page-title {
         margin: 0 0;
     }
