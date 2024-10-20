@@ -28,46 +28,6 @@
 
 @font-face {
     font-family: Inter-medium;
-    src: url(../fonts/dank-mono-nerd/DankMonoNerdFontMono-Regular.otf);
-}
-
-@font-face {
-    font-family: Inter-light;
-    src: url(../fonts/dank-mono-nerd/DankMonoNerdFontMono-Regular.otf);
-}
-
-@font-face {
-    font-family: Inter-thin;
-    src: url(../fonts/dank-mono-nerd/DankMonoNerdFontMono-Regular.otf);
-}
-
-@font-face {
-    font-family: Inter-extra-thin;
-    src: url(../fonts/dank-mono-nerd/DankMonoNerdFontMono-Regular.otf);
-}
-
-@font-face {
-    font-family: Inter-regular;
-    src: url(../fonts/dank-mono-nerd/DankMonoNerdFontMono-Regular.otf);
-}
-
-@font-face {
-    font-family: Inter-semi-bold;
-    src: url(../fonts/dank-mono-nerd/DankMonoNerdFontMono-Bold.otf);
-}
-
-@font-face {
-    font-family: Inter-bold;
-    src: url(../fonts/dank-mono-nerd/DankMonoNerdFontMono-Bold.otf);
-}
-
-@font-face {
-    font-family: Inter-bolder;
-    src: url(../fonts/dank-mono-nerd/DankMonoNerdFontMono-Bold.otf);
-}
-
-/* @font-face {
-    font-family: Inter-medium;
     src: url(../fonts/inter/Inter-Medium.ttf);
 }
 
@@ -104,7 +64,7 @@
 @font-face {
     font-family: Inter-bolder;
     src: url(../fonts/inter/Inter-ExtraBold.ttf);
-} */
+}
 
 @font-face {
     font-family: Krona-one;
