@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Advanced Darksky Observatory</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/animations.css" />
+        <link rel="shortcut icon" href="icons/favicon.ico?v=1.0" type="images/x-icon" />
+    </head>
+    <body>
+        <div class="loader-background">
+            <div class="loader">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+            </div>
+        </div>
+
+        <div class="container-fluid parent-container layer">
+            <div class="row parent-row g-sm-2">
+                <div class="col-xxl-2 col-xl-3">
+                    <div class="menu-container child-container hide-menu" id="menu-container">
+                        <div class="wrapper" id="menu-wrapper">
+                            
+                            <div class="menu-image menu-home-image animation-grow" id="menu-image"></div>
+                            <div class="menu-tabs" id="menu-tabs">
+                                <a href="html/home.html" class="menu-link scale-0" target="frame">
+                                    <div class="tab tab-dark-mode home tab-dark-active d-flex flex-row align-items-center">
+                                        <img src="icons/home.svg" alt="Home icon" class="icon tab-icon">
+                                        <span class="tab-text">
+                                            <h6 class="tab-heading">
+                                                Home
+                                            </h6>
+                                            Advanced Darksky Observatory
+                                        </span>
+                                    </div>
+                                </a>
+                                <a href="html/about.html" class="menu-link scale-0" target="frame">
+                                    <div class="tab tab-dark-mode about d-flex flex-row align-items-center">
+                                        <img src="icons/about.svg" alt="About icon" class="icon tab-icon">
+                                        <span class="tab-text">
+                                            <h6 class="tab-heading">
+                                                About
+                                            </h6>
+                                            Learn about the observatory
+                                        </span>
+                                    </div>
+                                </a>
+                                <a href="html/equipment.html" class="menu-link scale-0" target="frame">
+                                    <div class="tab tab-dark-mode equipment d-flex flex-row align-items-center">
+                                        <img src="icons/equipment.svg" alt="Equipment icon" class="icon tab-icon">
+                                        <span class="tab-text">
+                                            <h6 class="tab-heading">
+                                                Equipment
+                                            </h6>
+                                            Explore our cutting edge equipment
+                                        </span>
+                                    </div>
+                                </a>
+                                <a href="html/collaborations.html" class="menu-link scale-0" target="frame">
+                                    <div class="tab tab-dark-mode collaborations d-flex flex-row align-items-center">
+                                        <img src="icons/collaborations.svg" alt="Collaborations icon" class="icon tab-icon">
+                                        <span class="tab-text">
+                                            <h6 class="tab-heading">
+                                                Collaborations
+                                            </h6>
+                                            Check out our collaborations
+                                        </span>
+                                    </div>
+                                </a>
+                                <a href="html/research.html" class="menu-link scale-0" target="frame">
+                                    <div class="tab tab-dark-mode research d-flex flex-row align-items-center">
+                                        <img src="icons/research.svg" alt="Research icon" class="icon tab-icon">
+                                        <span class="tab-text">
+                                            <h6 class="tab-heading">
+                                                Research
+                                            </h6>
+                                            Ongoing research at the ADO
+                                        </span>
+                                    </div>
+                                </a>
+                                <a href="html/data.html" class="menu-link scale-0" target="frame">
+                                    <div class="tab tab-dark-mode data d-flex flex-row align-items-center">
+                                        <img src="icons/data-base.svg" alt="Data icon" class="icon tab-icon">
+                                        <span class="tab-text">
+                                            <h6 class="tab-heading">
+                                                Data Archive
+                                            </h6>
+                                            Download data for your research
+                                        </span>
+                                    </div>
+                                </a>
+                                <a href="html/people.html" class="menu-link scale-0" target="frame">
+                                    <div class="tab tab-dark-mode people d-flex flex-row align-items-center">
+                                        <img src="icons/people.svg" alt="People icon" class="icon tab-icon">
+                                        <span class="tab-text">
+                                            <h6 class="tab-heading">
+                                                People
+                                            </h6>
+                                            Connect with our team
+                                        </span>
+                                    </div>
+                                </a>
+                                <a href="html/contact.html" class="menu-link scale-0" target="frame">
+                                    <div class="tab tab-dark-mode contact d-flex flex-row align-items-center">
+                                        <img src="icons/phone.svg" alt="Contact icon" class="icon tab-icon">
+                                        <span class="tab-text">
+                                            <h6 class="tab-heading">
+                                                Contact
+                                            </h6>
+                                            Have questions? Connect with us
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="menu-footer menu-link scale-0">
+                                    <h4 class="need-help">
+                                        Need help?
+                                    </h4>
+                                    <span class="reach-us-text">Reach us at</span>
+                                    <span class="menu-email">
+                                        <img class="menu-email-icon" src="icons/email.svg" alt="Email icon">
+                                        <a href="mailto:nakshtra@phy.iith.ac.in" class="menu-email-id">nakshtra@phy.iith.ac.in</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-10 col-xl-9 col-lg-12 outer-child">
+                    <div class="container-fluid inner-child">
+                        <div class="row inner-row">
+                            <div class="main-title main-title-inactive d-flex flex-row align-items-center justify-content-between header">
+                                <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                    <div class="title-ado">
+                                        <h2 class="title-ado-1">
+                                            ADVANCED DARKSKY
+                                        </h2>
+                                        <h1 class="title-ado-2">
+                                            OBSERVATORY
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 header">  
+                                    <div class="iit-h d-flex flex-row align-items-baseline justify-content-end">
+                                        <img src="images/IIT_Hyderabad_Insignia.svg.webp" alt="IITH Insignia" class="iith-insignia">
+                                        <div class="iith-wrapper">IIT</div>
+                                        <div class="hyderabad-wrapper">HYDERABAD</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="content-container child-container child-container-home-active layer">
+                                    <iframe src="html/home.html" title="Home" name="frame" class="iframe" id="content-frame"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapsible-menu" id="collapsible-menu">
+        </div>
+
+        <div class="collapsible-menu" id="collapsible-menu-close">
+        </div>
+
+        <div class="color-mode" id="dark-mode">
+        </div>
+
+        <div class="color-mode" id="light-mode">
+        </div>
+        
+        <script src="js/script.js" async defer></script>
+        <script src="js/frame.js" async defer></script>
+    </body>
+</html>
