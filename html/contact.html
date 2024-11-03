@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Research</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/animations.css" />
+        <link rel="shortcut icon" href="../icons/favicon.webp" type="images/#.ico" />
+
+        <style>
+            .content-tab {
+                padding: 0.5dvh 1.5vw;
+                overflow-y: auto;
+            }
+
+            .description-conatiner {
+                min-height: 100%;
+                max-width: 100%;
+            }
+
+            @media only screen and (min-width: 1199px) {
+                .contact-form {
+                    max-height: 95dvh;
+                }
+            }
+
+
+            .contact-row {
+                height: inherit;
+            }
+
+            .contact-container {
+                min-height: 100%;
+            }
+
+            form {
+                padding: 2rem;
+            }
+
+            .contact-form {
+                animation-delay: 0.2s;
+            }
+
+            .form-heading {
+                animation-delay: 0.4s;
+            }
+
+            .ff-1 {
+                animation-delay: 0.4s;
+            }
+
+            .ff-2 {
+                animation-delay: 0.5s;
+            }
+
+            .ff-3 {
+                animation-delay: 0.6s;
+            }
+
+            .ff-4 {
+                animation-delay: 0.7s;
+            }
+
+            .ff-5 {
+                animation-delay: 0.8s;
+            }
+
+            .ff-6 {
+                animation-delay: 0.9s;
+            }
+
+            .cc-1 {
+                animation-delay: 0.5s;
+            }
+
+            .cc-2 {
+                animation-delay: 0.6s;
+            }
+
+            .cc-3 {
+                animation-delay: 0.7s;
+            }
+
+            .cc-4 {
+                animation-delay: 0.8s;
+            }
+
+            .cc-5 {
+                animation-delay: 0.9s;
+            }
+
+            .cc-6 {
+                animation-delay: 1.0s;
+            }
+
+            .cc-7 {
+                animation-delay: 1.1s;
+            }
+
+            .cc-8 {
+                animation-delay: 1.2s;
+            }
+
+            .input-mod {
+                margin: 2rem 0;
+                border-radius: 50px;
+            }
+
+            .contact-email {
+                min-height: 100%;
+            }
+
+            .map-container {
+                height: 35dvh;
+            }
+
+            @media only screen and (min-width: 1920px) {
+                .input-mod {
+                    margin: 3rem 0;
+                }
+
+                form {
+                    padding: 4rem;
+                }
+            }
+
+            @media only screen and (max-width: 575px) {
+                .input-mod {
+                    margin: 1rem 0;
+                }
+
+                form {
+                    padding: 1rem;
+                }
+            }
+
+            @media only screen and (min-width: 1200px) {
+                #questions {
+                    border-radius: 35px;
+                }
+
+                .email-container {
+                    max-height: 60dvh;
+                }
+            }
+
+            #first-name {
+                margin-top: 0;
+            }
+
+            #questions {
+                min-height: 10rem;
+            }
+
+            #send-button {
+                width: 100%;
+                border-radius: 50px;
+                padding: 1rem;
+            }
+
+            label, input, textarea {
+                color: black !important;
+                font-family: Inter-regular !important;
+                padding-left: 1.5rem !important;
+            }
+
+            .email-photo {
+                border-radius: 150px;
+                max-height: 3rem;
+            }
+
+            .contact-email {
+                width: 100%;
+            }
+
+            .content-tab {
+                padding: 0.8rem 1rem;
+            }
+
+            .email-info {
+                padding-left: 1rem;
+            }
+
+            .email-name {
+                font-family: Inter-semi-bold;
+                font-size: 1rem;
+            }
+
+            a {
+                color: white;
+                text-decoration: underline;
+                font-family: Inter-regular;
+            }
+
+            .mail-id {
+                font-size: 0.8rem;
+            }
+
+            .email-icon {
+                max-width: 1.5rem;
+            }
+
+            .map, .map-frame {
+                padding: 0px;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .map-row {
+                min-width: 100%;
+            }
+
+            .form-heading {
+                color: white;
+                font-size: 1.8rem;
+                font-family: Inter-bold;
+                min-width: 100%;
+                text-align: center;
+                margin-top: 2rem;
+            }
+
+            #map {
+                height: 100%;
+            } 
+        </style>
+    </head>
+    <body>
+    <body class="content">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container-fluid frame-container">
+            <div class="loader-container">
+                <div class="loader">
+                    <div class="inner one"></div>
+                    <div class="inner two"></div>
+                    <div class="inner three"></div>
+                </div>
+            </div>
+            <div class="row frame-row align-items-center g-2 overflow-lg-auto">
+                <div class="col-xl-8 order-xl-1 order-2">
+                    <div class="description-container">
+                        <div class="row g-2 ntact-row">
+                            <div class="col-lg-7 col-12 contact-row">
+                                
+                                <div class="contact-form content-tab overflow-xl-auto animation-expand-y">
+                                    <div class="form-heading">HAVE SOME QUESTIONS?</div>
+                                    <form novalidate id="contact-form" onsubmit="submitForm(event)">
+                                        <div class="form-floating animation-grow ff-1">
+                                            <input type="text" id="first-name" class="form-control input-mod" placeholder="First name" required />
+                                            <label for="first-name">First name</label>
+                                        </div>
+                                        <div class="form-floating animation-grow ff-2">
+                                            <input type="text" id="last-name" class="form-control input-mod" placeholder="Last name" required />
+                                            <label for="last-name">Last name</label>
+                                        </div>
+                                        <div class="form-floating animation-grow ff-3">
+                                            <input type="email" id="email" class="form-control input-mod" placeholder="Type your email" required />
+                                            <label for="email">What's your email?</label>
+                                        </div>
+                                        <div class="form-floating animation-grow ff-4">
+                                            <input type="text" id="affiliation" class="form-control input-mod" placeholder="Affiliation" required />
+                                            <label for="affiliation">What's your affiliation?</label>
+                                        </div>
+                                        <div class="form-floating animation-grow ff-5">
+                                            <textarea id="questions" class="form-control input-mod" placeholder="Questions" required></textarea>
+                                            <label for="questions" class="label-qs">Your questions ...</label>
+                                        </div>
+                                        <button id="send-button" class="research-button animation-grow ff-6" type="submit">Send Message</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 col-12 contact-row d-flex flex-column">
+                                <div class="row overflow-xl-auto g-2 email-container">
+                                    <div class="col-lg-12 col-md-6 animation-swipe-fade-bottom cc-1">
+                                        <div class="contact-email mayukh d-flex content-tab align-items-center">
+                                            <div class="email-image">
+                                                <img src="../images/contact/mayukh-p.webp" alt="Mayukh-P.webp" class="email-photo">
+                                            </div>
+                                            <div class="email-info">
+                                                <h5 class="email-name">Dr. Mayukh Pahari</h5>
+                                                <div class="email-id">
+                                                    <a href="mailto:mayukh@phy.iith.ac.in" class="mail-id">mayukh@phy.iith.ac.in</a>
+                                                    <img src="../icons/contact/email.webp" alt="email-icon" class="email-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-6 animation-swipe-fade-bottom cc-2">
+                                        <div class="contact-email mayukh d-flex content-tab align-items-center">
+                                            <div class="email-image">
+                                                <img src="../images/contact/anish-s.webp" alt="Anish-S.webp" class="email-photo">
+                                            </div>
+                                            <div class="email-info">
+                                                <h5 class="email-name">Anish Sarkar</h5>
+                                                <div class="email-id">
+                                                    <a href="mailto:sarkar.anish.1001@alumn.iith.ac.in" class="mail-id">sarkar.anish.1001@alumn.iith.ac.in</a>
+                                                    <img src="../icons/contact/email.webp" alt="email-icon" class="email-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-12 col-md-6 animation-swipe-fade-bottom cc-3">
+                                        <div class="contact-email mayukh d-flex content-tab align-items-center">
+                                            <div class="email-image">
+                                                <img src="../images/contact/vishal-j.webp" alt="Vishal-J.webp" class="email-photo">
+                                            </div>
+                                            <div class="email-info">
+                                                <h5 class="email-name">Vishal Jadoliya</h5>
+                                                <div class="email-id">
+                                                    <a href="mailto:ph23resch11022@iith.ac.in" class="mail-id">ph23resch11022@iith.ac.in</a>
+                                                    <img src="../icons/contact/email.webp" alt="email-icon" class="email-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-6 animation-swipe-fade-bottom cc-4">
+                                        <div class="contact-email mayukh d-flex content-tab align-items-center">
+                                            <div class="email-image">
+                                                <img src="../images/contact/megha-t.webp" alt="Megha-T.webp" class="email-photo">
+                                            </div>
+                                            <div class="email-info">
+                                                <h5 class="email-name">Megha Tomer</h5>
+                                                <div class="email-id">
+                                                    <a href="mailto:ph24resch11010@iith.ac.in" class="mail-id">ph24resch11010@iith.ac.in</a>
+                                                    <img src="../icons/contact/email.webp" alt="email-icon" class="email-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-12 col-md-6 animation-swipe-fade-bottom cc-5">
+                                        <div class="contact-email mayukh d-flex content-tab align-items-center">
+                                            <div class="email-image">
+                                                <img src="../images/contact/anurag-b.webp" alt="Anurag-B.webp" class="email-photo">
+                                            </div>
+                                            <div class="email-info">
+                                                <h5 class="email-name">Anurag Baruah</h5>
+                                                <div class="email-id">
+                                                    <a href="mailto:ph24resch11002@iith.ac.in" class="mail-id">ph24resch11002@iith.ac.in</a>
+                                                    <img src="../icons/contact/email.webp" alt="email-icon" class="email-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-12 col-md-6 animation-swipe-fade-bottom cc-6">
+                                        <div class="contact-email mayukh d-flex content-tab align-items-center">
+                                            <div class="email-image">
+                                                <img src="../images/contact/jyotiraditya-m.webp" alt="J-M.webp" class="email-photo">
+                                            </div>
+                                            <div class="email-info">
+                                                <h5 class="email-name">Jyotiraditya Mandal</h5>
+                                                <div class="email-id">
+                                                    <a href="mailto:ph23mscst11019@iith.ac.in" class="mail-id">ph23mscst11019@iith.ac.in</a>
+                                                    <img src="../icons/contact/email.webp" alt="email-icon" class="email-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-12 col-md-6 animation-swipe-fade-bottom cc-7">
+                                        <div class="contact-email mayukh d-flex content-tab align-items-center">
+                                            <div class="email-image">
+                                                <img src="../images/contact/gaurav-g.webp" alt="Gaurav-G.webp" class="email-photo">
+                                            </div>
+                                            <div class="email-info">
+                                                <h5 class="email-name">Gaurav Gangwar</h5>
+                                                <div class="email-id">
+                                                    <a href="mailto:ph22mscst11012@iith.ac.in" class="mail-id">ph22mscst11012@iith.ac.in</a>
+                                                    <img src="../icons/contact/email.webp" alt="email-icon" class="email-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="row map-row flex-fill mt-2 map-container">
+                                    <div class="col-xl-12 d-flex flex-row align-items-stretch animation-swipe-fade-bottom cc-8">
+                                        <div class="content-tab map" id="map">
+                                            <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.1117784515095!2d78.11793437686944!3d17.597426196716892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf7849493b633%3A0xb01cf6869b8abc58!2sAdvance%20Darksky%20Observatory!5e0!3m2!1sen!2sin!4v1728229744443!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="col-xl-4 order-xl-2 order-1 page-intro">
+                    <div class="page-description">
+                        <div class="page d-flex flex-column align-items-center" id="network-image-container">
+                            <img src="../images/contact/contact-image.webp" alt="ADO image" class="content-image mix-blend-lighten animation-grow" id="network-image">
+                        </div>
+                        <div class="page-title animation-swipe-fade-bottom">
+                            Contact Us
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../js/get_ip.js" async defer></script>
+        <script src="../js/send_email.js" async defer></script>
+        <script src="../js/loader.js" async defer></script>
+        <script src="../js/load_map.js" async defer></script>
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" async defer></script> -->
+    </body>
+</html>
